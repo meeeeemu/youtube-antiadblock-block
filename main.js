@@ -1,34 +1,38 @@
 document.addEventListener('yt-navigate-start', function(){
 
     if(document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER")){
-        document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER").remove()
+        document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER").remove();
     }
 
-    console.log("[INFO] Removed player...")
+    console.log("[INFO] Removed player...");
 
 });
 
+function initNewPlayer(userEmbedURL, adblockMessageParent){
+    let newPlayer = document.createElement("EMBED");
+    newPlayer.setAttribute("id", "YOUTUBEADBLOCKBLOCKPLAYER");
+    newPlayer.setAttribute("class", "style-scope ytd-enforcement-message-view-model");
+    newPlayer.setAttribute("height", "720");
+    newPlayer.setAttribute("width", "1280");
+    newPlayer.setAttribute("src", userEmbedURL);
+    adblockMessageParent[0].appendChild(newPlayer);
+}
+
 document.addEventListener('yt-navigate-finish', function(){
 
-    console.log("[INFO] Creating player...")
+    console.log("[INFO] Creating player...");
 
     let userEmbedURL = window.location.href.replace("watch?v=", "embed/");
 
     setTimeout(function(){
         if(!document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER")){
             let adblockMessage = document.querySelectorAll("div.style-scope.ytd-enforcement-message-view-model");
-            let adblockMessageParent = document.querySelectorAll("ytd-enforcement-message-view-model.style-scope.yt-playability-error-supported-renderers")
+            let adblockMessageParent = document.querySelectorAll("ytd-enforcement-message-view-model.style-scope.yt-playability-error-supported-renderers");
             if(adblockMessage[0]){
-                adblockMessage[0].remove()
+                adblockMessage[0].remove();
+                initNewPlayer(userEmbedURL, adblockMessageParent);
             } else {
-                let newPlayer = document.createElement("EMBED");
-                // newPlayer.outerHTML = '<embed class="style-scope ytd-enforcement-message-view-model" id="YOUTUBEADBLOCKBLOCKPLAYER" height="720" width="1280" src="' + userEmbedURL + '">';
-                newPlayer.setAttribute("id", "YOUTUBEADBLOCKBLOCKPLAYER");
-                newPlayer.setAttribute("class", "style-scope ytd-enforcement-message-view-model");
-                newPlayer.setAttribute("height", "720");
-                newPlayer.setAttribute("width", "1280");
-                newPlayer.setAttribute("src", userEmbedURL);
-                adblockMessageParent[0].appendChild(newPlayer);
+                initNewPlayer(userEmbedURL, adblockMessageParent);
             }
         }
     }, 1)
