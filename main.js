@@ -20,6 +20,7 @@ document.addEventListener('yt-navigate-finish', function(){
             let adblockMessageParent = document.querySelectorAll("ytd-enforcement-message-view-model.style-scope.yt-playability-error-supported-renderers")
             if(adblockMessage[0]){
                 adblockMessage[0].remove()
+            } else {
                 let newPlayer = document.createElement("EMBED");
                 // newPlayer.outerHTML = '<embed class="style-scope ytd-enforcement-message-view-model" id="YOUTUBEADBLOCKBLOCKPLAYER" height="720" width="1280" src="' + userEmbedURL + '">';
                 newPlayer.setAttribute("id", "YOUTUBEADBLOCKBLOCKPLAYER");
