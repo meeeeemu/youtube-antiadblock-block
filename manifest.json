@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Anti Adblock Bypasser",
+  "version": "1.0",
+
+  "description": "little extension to bypass the anti adblocker",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
