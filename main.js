@@ -2,13 +2,13 @@ document.addEventListener('yt-navigate-start', function(){
 
     if(document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER")){
         document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER").remove();
+        console.log("[INFO] Removed player...");
     }
-
-    console.log("[INFO] Removed player...");
 
 });
 
 function initNewPlayer(userEmbedURL, adblockMessageParent){
+    console.log("[INFO] Creating player...");
     let newPlayer = document.createElement("EMBED");
     newPlayer.setAttribute("id", "YOUTUBEADBLOCKBLOCKPLAYER");
     newPlayer.setAttribute("class", "style-scope ytd-enforcement-message-view-model");
@@ -19,8 +19,6 @@ function initNewPlayer(userEmbedURL, adblockMessageParent){
 }
 
 document.addEventListener('yt-navigate-finish', function(){
-
-    console.log("[INFO] Creating player...");
 
     let userEmbedURL = window.location.href.replace("watch?v=", "embed/");
 
