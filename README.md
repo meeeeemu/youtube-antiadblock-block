@@ -1,4 +1,4 @@
-# youtube-adblock-block
+# youtube-adblock-bypass
 
 i got the fabled "Adblockers are not allowed on youtube" message the other day which disabled video playback on youtube
 
