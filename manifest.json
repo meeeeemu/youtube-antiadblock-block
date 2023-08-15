@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Youtube Anti Adblock Bypasser",
-  "version": "1.1.6",
+  "version": "1.1.8",
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "youtube-adblock-block1.1.0@mimumusic.com"
+      "id": "youtube-adblock-block1.1.8@mimumusic.com"
     }
   },
 

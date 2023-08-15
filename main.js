@@ -24,8 +24,6 @@ document.addEventListener('yt-navigate-finish', function(){
 
     let userEmbedURL = userEmbedURLFormat.slice(0,41) + "?autoplay=1";
 
-    console.log(userEmbedURL);
-
     setTimeout(function(){
         if(!document.getElementById("YOUTUBEADBLOCKBLOCKPLAYER")){
             let adblockMessage = document.querySelectorAll("div.style-scope.ytd-enforcement-message-view-model");
@@ -35,6 +33,10 @@ document.addEventListener('yt-navigate-finish', function(){
                 initNewPlayer(userEmbedURL, adblockMessageParent);
             } else {
                 initNewPlayer(userEmbedURL, adblockMessageParent);
+                if(!adblockMessage[0])
+                {
+                    console.log("[WARN] Adblock message already removed, or hasnt been removed.");
+                }
             }
         }
     }, 1)
