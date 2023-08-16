@@ -10,4 +10,4 @@ enjoy :>
 
 ## installation
 
-will be on the firefox store soon
+## https://addons.mozilla.org/en-GB/firefox/addon/youtube-anti-adblock-bypasser/
