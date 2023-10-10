@@ -6,6 +6,10 @@ this extension gets the video url and changes it to an embed, since video embeds
 
 enjoy :>
 
+# TO-DO:
+
+fix playlists (it will happen)
+
 #### NOTE: this will disable a few features on the video player and you may find some videos are unable to be played due to copyright but hey it's better than wasting your time by sitting through ads
 
 ## installation
