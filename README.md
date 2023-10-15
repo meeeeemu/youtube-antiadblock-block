@@ -8,7 +8,7 @@ enjoy :>
 
 # TO-DO:
 
-fix playlists (it will happen)
+fix playlists (it will happen) (i hope)
 
 probably make it more i guess compatible with stuff lol
 
