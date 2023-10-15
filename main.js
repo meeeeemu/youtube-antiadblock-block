@@ -1,8 +1,8 @@
 
-// I CANNOT GUARANTEE THAT THIS WILL WORK FOREVER, ALTHOUGH, IF YOUTUBE STARTS EMBEDDING ADS INTO THE PLAYER, THERE'S A CHANCE
-// (AND I MEAN A REALLY SMALL CHANCE) THAT THIS WILL STILL TECHNICALLY WORK, WOULD HAVE TO UPDATE A FEW THINGS
-// SINCE I DONT THINK YOUTUBE CAN PUT ADS IN EMBEDS
-// THEY CAN HOWEVER COMPLETELY DISABLE EMBEDS, BUT IF THAT HAPPENS THEN LIKE EVERY WEBSITE EVER WOULD BREAK SO
+// i cannot guarantee that this will work forever, although, if youtube starts embedding ads into the player, there's a chance
+// (and i mean a really small chance) that this will still technically work, would have to update a few things
+// since i dont think youtube can put ads in embeds
+// they can however completely disable embeds, but if that happens then like every website ever would break so
 
 
 document.addEventListener('yt-navigate-start', function(){
