@@ -6,6 +6,8 @@ this extension gets the video url and changes it to an embed, since video embeds
 
 enjoy :>
 
+i'll accept pretty much any pull request
+
 # TO-DO:
 
 fix playlists (it will happen) (i hope)
