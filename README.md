@@ -1,3 +1,6 @@
+## NOTE: wont be updated by me anymore, the adblock issue isnt a thing anymore pretty much so there's no point for this to exist. might become useful again one day but who knows
+
+
 # youtube-adblock-bypass
 
 i got the fabled "Adblockers are not allowed on youtube" message the other day which disabled video playback on youtube
